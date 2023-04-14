@@ -1,0 +1,12 @@
+# write a program to print fibonacci series in python
+import math
+
+def fibonacciSeries(phi, n):
+    for i in range(0, n + 1):
+        result = round(pow(phi, i) / math.sqrt(5))
+        print(result, end=" ")
+
+
+num = 10
+phi = (1 + math.sqrt(5)) / 2
+fibonacciSeries(phi, num)
